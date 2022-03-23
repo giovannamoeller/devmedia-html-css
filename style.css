@@ -1,0 +1,76 @@
+* { /* resentando o padrão do navegador, que adiciona algumas configurações já prontas */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; /* fonte utilizada: montserrat, pode pegar pelo google fonts*/
+}
+
+body {
+  background: #F8FAFB;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* adicionando um display flex para centralizar tudo, tanto verticalmente quanto horizontalmente */
+}
+
+h1 {
+  margin: 1rem 0; /* margem vertical no título */
+}
+
+a { 
+  color: #494949; /* alterando a cor do link */
+}
+
+.carreiras {
+  margin: 2rem 0;
+  display: flex; 
+  gap: 2rem;
+  /* aplicando o display flex para cada carreira ficar um do lado da outra, com espaçamento de 2rem entre elas */
+}
+
+.carreira {
+  background: #FFF;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); /* sombra */
+  border-radius: 1rem;
+  display: flex;  /* display flex para ficar a imagem e o título em baixo do outro */
+  flex-direction: column; /* direção de coluna para ficar a imagem e o título em baixo do outro, e não do lado */
+  justify-content: center;
+  align-items: center; /* alinhando tudo no centro */
+  gap: 2rem; /* espaçamento entre imagem e título de 2rem, ou seja, 32px */
+  padding: 1rem 2rem; /* padding pra não ficar colado na borda */
+  color: #1f4f66; /* cor dos textos */
+  cursor: pointer; /* mãozinha simbolizando um clique */
+  border: 2px solid #FFF; /* adicionando uma borda branca */
+  transition: all .3s; /* transição para a borda ficar suave */
+} 
+
+.carreira .image {
+  width: 64px;
+  height: 64px; /* adicionando uma div com 64px representando a imagem */
+}
+
+.carreira img {
+  width: 100%; /* colocando a largura da imagem de 100% para ocupar 100% do seu pai, que é a div .image, assim ocupa 64px */
+}
+
+.carreira span {
+  font-size: 120%; /* aumentando o tamanho da fonte */
+  text-align: center;
+  font-weight: 500; /* aumentando a espessura da fonte */
+}
+
+.carreira:hover {
+  border: 2px solid #7F6998; /* alterando a borda sempre quando o usuário colocar o mouse por cima para roxo */
+}
+
+.outras-tecnologias {
+  background: #FFF;
+  padding: 2rem 4rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  color: #1f4f66;
+  font-weight: 500;
+}
